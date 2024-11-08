@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #000000;">
     <img src="https://http.cat/404", id="errorimage">
     <script>
         const codes = [
@@ -77,7 +77,7 @@
         var index = 0;
 
         function changeImage() {
-            index = Math.floor(Math.random*codes.length);
+            index = Math.floor(Math.random()*codes.length);
             document.getElementById("errorimage").src = "https://http.cat/".concat(codes[index]);
         }
         window.onload = function() {
